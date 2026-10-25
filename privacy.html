@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー | MyGoogleFitSample</title>
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <header><a href="index.html">Personal Health Sync</a><nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></header>
+  <main>
+    <h1>プライバシーポリシー</h1>
+    <p>このポリシーは、Sheegyyが個人利用向けに運営するMyGoogleFitSample（Personal Health Sync）に適用されます。</p>
+    <h2>アクセスする情報</h2>
+    <p>本人のOAuth同意に基づき、Google Healthの睡眠と健康指標（心拍、心拍変動、酸素飽和度、呼吸数）を読み取ります。Google Healthアカウントの接続確認、対象期間と取得時刻などの同期情報、および保存先Driveファイルの識別情報も扱います。Googleアカウントのパスワードは取得しません。</p>
+    <h2>利用目的</h2>
+    <p>本人の健康記録を本人指定のDriveファイルへ同期する目的にのみ利用します。健康情報の販売、広告配信、広告向けプロファイリング、信用評価への利用、汎用AIモデルの学習への利用は行いません。</p>
+    <h2>保存場所・保護・保存期間</h2>
+    <p>健康記録は利用者のGoogle Driveに保存し、同期ファイルの内容は原則として直近14日分で置き換えます。Driveの版履歴やバックアップの保持は、Google Driveと利用者の設定に従います。</p>
+    <p>処理は利用者が管理するMicrosoft Azureで行います。OAuth認証情報はAzure Key Vaultに保管し、初回認可を行う本人のPCにも認証用ファイルが作成されます。これらの認証情報は、接続解除や運用終了時に利用者が削除します。サービス間の通信にはHTTPSを使用します。</p>
+    <p>アプリの運用ログには成功・失敗、取得件数などを記録します。アプリの処理では、生の健康記録、トークン、クライアントシークレットをログに出力しません。Azureの監視ログの保持期間は、利用者のAzure設定に従います。</p>
+    <h2>共有・第三者サービス</h2>
+    <p>処理に必要なGoogleとMicrosoft Azure以外へ、健康情報をアプリから自動転送することはありません。運営者が健康情報を販売することはありません。Driveファイルの自動公開や共有権限の追加は行いません。ただし、選択したフォルダーの既存の共有設定を継承する場合があるため、利用者自身で保存先のアクセス権を確認してください。</p>
+    <p>ChatGPTなどの接続アプリへDriveファイルを読ませるかどうかは、利用者による別の選択です。その場合の取り扱いには、選択したサービスのポリシーも適用されます。この説明サイト自体には、健康情報の入力欄、広告、解析タグ、独自のCookieを設置していません。サイトの配信にはGitHub Pagesを使用し、配信基盤は技術的なアクセスログを処理する場合があります。</p>
+    <h2>権限の撤回・削除</h2>
+    <p>Googleアカウントの<a href="https://myaccount.google.com/connections">サードパーティ接続</a>から、このアプリのアクセス権を撤回できます。Azure Functionsを停止することでも同期を停止できます。権限の撤回だけでは既存データは自動削除されないため、Driveファイル、PCの認証ファイル、Key Vaultの認証情報、運用ログは必要に応じて利用者が削除してください。削除済みシークレットの保持にはAzure Key Vaultの回復可能な削除設定が適用されます。</p>
+    <h2>Google APIのユーザーデータ</h2>
+    <p>Google APIから受領した情報の使用は、Limited Useの要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。</p>
+    <h2>お問い合わせ・変更</h2>
+    <p><a href="https://github.com/Sheegyy/health-sync-info/issues">Sheegyyへのお問い合わせ</a>をご利用ください。公開のIssueに健康データや認証情報を含めないでください。データの利用方法を変更する場合は、本ページを更新します。</p>
+  </main>
+  <footer>更新日: 2026-10-25</footer>
+</body>
+</html>

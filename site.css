@@ -1,0 +1,14 @@
+:root { color-scheme: light; font-family: Georgia, "Yu Mincho", serif; color: #20272b; background: #ffffff; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { max-width: 920px; margin: 0 auto; padding: 0 24px; font-size: 16px; line-height: 1.85; overflow-wrap: anywhere; }
+header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 28px; align-items: center; padding: 24px 0; border-bottom: 2px solid #26705c; }
+nav { display: flex; gap: 24px; }
+a { color: #176451; text-underline-offset: 4px; }
+a:focus-visible { outline: 2px solid #a44232; outline-offset: 4px; }
+main { padding: 32px 0; }
+h1 { font-size: 30px; line-height: 1.4; margin: 0 0 8px; }
+h2 { font-size: 20px; line-height: 1.5; margin: 32px 0 8px; }
+p { margin: 12px 0; }
+.subtitle { color: #5b6269; margin-top: 0; }
+footer { padding: 20px 0 28px; border-top: 1px solid #ccd2d4; color: #5b6269; font-size: 14px; }
+@media (max-width: 520px) { body { padding: 0 18px; } h1 { font-size: 25px; } header { padding: 18px 0; } }
